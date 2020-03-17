@@ -1,0 +1,48 @@
+Dataset
+Sample | LotShape
+------------------
+1      | Reg
+2      | IR
+3      | IR
+4      | Med
+
+
+LotShape = {Regular, Irregular, Medium-size}
+
+ |
+ v
+
+LotShape = {1, 2, 3}
+===============================================
+
+Advice: Don't replace them with numbers!!!
+
+
+Advice: Add dummy variables for each categories.
+
+Add the following 3 dummy variables for the "LotShape" variable.
+LotShape_reg, LotShape_IR, LotShape_med
+
+Sample | LotShape_reg | LotShape_IR  | LotShape_med
+----------------------------------------------------
+1      |     1        |     0        |     0
+2      |     0        |     1        |     0
+3      |     0        |     1        |     0
+4      |     0        |     0        |     1
+
+Finally, replace any column;
+
+Sample | LotShape_reg | LotShape_IR  | 
+----------------------------------------------------
+1      |     1        |     0        |     
+2      |     0        |     1        |     
+3      |     0        |     1        |    
+4      |     0        |     0        |  
+
+
+
+
+
+
+
+
