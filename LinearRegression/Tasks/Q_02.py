@@ -22,7 +22,7 @@ def Q_02(self, full_dataset):
     # drop original columns
     return_df.drop([' State'], axis=1, inplace=True)
 
-    print(return_df.head())
+    #print(return_df.head())
 
 
     return return_df

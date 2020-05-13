@@ -12,13 +12,13 @@ def Q_04(self, full_dataset_all_numeric):
 
     # Perform the pearson correlation
     corr_dataset = corr_dataset.corr(method='pearson')
-    corr_dataset = corr_dataset[['BWEIGHT']]
+    corr_dataset = corr_dataset[[' Logged_Acceleration']]
 
     # Find the strongest correlations
-    corr_dataset = corr_dataset.reindex(corr_dataset.BWEIGHT.abs().sort_values(ascending=False).index)
+    corr_dataset = corr_dataset.reindex(corr_dataset.loc[' Logged_Acceleration'].abs().sort_values(ascending=False).index)
 
-    # Drop BWEIGHT (as it will have a correlation of 1)
-    corr_dataset = corr_dataset.head(21).drop(['BWEIGHT']).reset_index()
+    # Drop logged_accel (as it will have a correlation of 1)
+    corr_dataset = corr_dataset.head(7).drop([' Logged_Acceleration']).reset_index()
 
     # Create the column headings
     corr_dataset.columns = ['variable_name', 'corr_score']

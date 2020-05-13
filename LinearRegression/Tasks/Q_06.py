@@ -12,10 +12,10 @@ def Q_06(self, full_dataset):
     ## YOUR CODE HERE ##
 
     # Input without target (BWEIGHT)
-    X = full_dataset.drop([' Acceleration'], axis=1)
+    X = full_dataset.drop([' Logged_Acceleration'], axis=1)
 
     # Target (BWEIGHT)
-    y = full_dataset[[' Acceleration']]
+    y = full_dataset[[' Logged_Acceleration']]
 
 
     return (X, y)

@@ -8,8 +8,8 @@ class Tasks:
         pd.set_option('display.width', 1000)
         pd.set_option('display.max_rows', 10)
         # First load the dataset into pandas dataframe
-        self.full_dataset = pd.read_csv(full_dataset_filename,delimiter=',')
-        self.judge_dataset = pd.read_csv(judge_filename,delimiter=',')
+        self.full_dataset = pd.read_csv(full_dataset_filename, delimiter=',')
+        self.judge_dataset = pd.read_csv(judge_filename, delimiter=',')
 
     #Imported methods
     from .Q_01 import Q_01
@@ -30,3 +30,10 @@ class Tasks:
     from .Q_16 import Q_16
     from .Q_17 import Q_17
     from .EDA import EDA
+    from .SGD import SGD
+    from .linear_regression import linear_regression
+    from .ridge import ridge
+    from .feature_target_split import feature_target_split
+    from .standardizer import standardizer
+    from .min_max_scaler import min_max_scaler
+    from .results import results
